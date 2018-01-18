@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/tela_aulas"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_top_menu_aulas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu"
+        android:background="@color/top_menu"
+        android:gravity="center_vertical|center"
+        android:text="@string/top_menu_aulas"
+        android:textColor="@color/white"
+        android:textSize="@dimen/top_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_top_menu_aulas"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/linear_aulas"
+        >
+        <TextView
+            android:id="@+id/item_au_numero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Nº"
+            android:textSize="@dimen/text"
+            android:textStyle="bold"
+            android:layout_weight=".09"
+            />
+
+
+        <TextView
+            android:id="@+id/item_au_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Data"
+            android:textSize="16sp"
+            android:layout_weight=".18"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/item_au_dia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Dia"
+            android:textSize="@dimen/text"
+            android:layout_weight=".20"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/item_au_hora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Hora"
+            android:textSize="@dimen/text"
+            android:layout_weight=".16"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/item_au_instrutor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Instrutor"
+            android:textSize="@dimen/text"
+            android:layout_weight=".3"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/item_au_veiculo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="Veículo"
+            android:textSize="@dimen/text"
+            android:layout_weight=".3"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_aulas"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_agendar_aulas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_aulas">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/bt_agendar_aulas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/verde"
+        android:text="Agendar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tela_aulas" />
+
+</android.support.constraint.ConstraintLayout>

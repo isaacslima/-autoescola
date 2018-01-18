@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item"
+    >
+
+    <TextView
+        android:id="@+id/item_au_numero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Nº"
+        android:textSize="@dimen/text"
+        android:textStyle="bold"
+        android:layout_weight=".09"
+    />
+
+
+    <TextView
+        android:id="@+id/item_au_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Data"
+        android:textSize="16sp"
+        android:layout_weight=".18"
+    />
+
+    <TextView
+        android:id="@+id/item_au_dia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Dia"
+        android:textSize="@dimen/text"
+        android:layout_weight=".20"
+    />
+
+    <TextView
+        android:id="@+id/item_au_hora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Hora"
+        android:textSize="@dimen/text"
+        android:layout_weight=".16"
+    />
+
+    <TextView
+        android:id="@+id/item_au_instrutor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Instrutor"
+        android:textSize="@dimen/text"
+        android:layout_weight=".3"
+    />
+
+    <TextView
+        android:id="@+id/item_au_modelo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="Veículo"
+        android:textSize="@dimen/text"
+        android:layout_weight=".3"
+    />
+
+</LinearLayout>
+

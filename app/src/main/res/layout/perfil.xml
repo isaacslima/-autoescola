@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_top_menu_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu"
+        android:background="@color/top_menu"
+        android:gravity="center_vertical|center"
+        android:text="@string/top_menu_perfil"
+        android:textColor="@color/white"
+        android:textSize="@dimen/top_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_avatar_perfil"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_top_menu_perfil"
+        app:srcCompat="@mipmap/avatar2" />
+
+    <TextView
+        android:id="@+id/tv_middle_menu_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu"
+        android:layout_marginTop="16dp"
+        android:background="@color/top_menu"
+        android:gravity="center_vertical|center"
+        android:text="@string/middle_menu_perfil"
+        android:textColor="@color/white"
+        android:textSize="@dimen/top_text_size"
+        app:layout_constraintTop_toBottomOf="@+id/iv_avatar_perfil"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="176dp" />
+
+    <ScrollView
+        android:id="@+id/sv_perfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_middle_menu_perfil">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="center_vertical"
+                    android:text="Nome:"
+                    android:textSize="@dimen/text" />
+
+
+                <TextView
+                    android:id="@+id/perfil_nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text="CPF:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_cpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:text="RG:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+
+                    android:text="Validade do Processo:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_validadeprocesso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text=""
+
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text="Apto Exame Médico:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_examemedico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text="Apto Exame Teórico:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_exameteorico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text="Apto Exame Moto:"
+                    android:textSize="@dimen/text" />
+
+                <TextView
+                    android:id="@+id/perfil_examemoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="8dp"
+                    android:gravity="left"
+                    android:text="Apto Exame Carro:"
+                    android:textSize="@dimen/text"
+
+                    />
+
+                <TextView
+                    android:id="@+id/perfil_examecarro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

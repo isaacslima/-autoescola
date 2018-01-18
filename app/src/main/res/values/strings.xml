@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Autoescola Mais</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_login">Deseja Realmente Sair?</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Login</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="error_invalid_email">Este login é inválido.</string>
+    <string name="error_invalid_password">Senha é muito curta.</string>
+    <string name="error_incorrect_password">Senha está incorreta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="permission_rationale">"Permissões de contato é necessario."
+    </string>
+    <string name="title_activity_financeiro">Autoescola Mais</string>
+    <string name="title_activity_main">Autoescola Mais</string>
+
+
+    <string name="top_menu_perfil">Meu Perfil</string>
+    <string name="middle_menu_perfil">Dados do Processo</string>
+    <string name="top_menu_financeiro">Financeiro</string>
+
+    <string name="top_menu_aulas">Minhas Aulas</string>
+
+    <string name="top_menu_exames">Meus Exames</string>
+    <string name="title_activity_agendamento">Horários Disponíveis</string>
+    <string name="title_activity_formulario">Formulario</string>
+    <string name="title_activity_agenda_aula">Agendar Aulas</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">120dp</dimen>
+    <dimen name="top_menu">50dp</dimen>
+    <dimen name="action_bar_size">50dp</dimen>
+    <dimen name="fab_margin">0dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="nav_header_vertical_spacing">0dp</dimen>
+    <dimen name="top_text_size">22dp</dimen>
+    <dimen name="text">16dp</dimen>
+    <dimen name="item">50dp</dimen>
+    <dimen name="numero_financeiro">30dp</dimen>
+    <dimen name="descricao_financeiro">85dp</dimen>
+    <dimen name="valor_financeiro">85dp</dimen>
+    <dimen name="vencimento_financeiro">80dp</dimen>
+    <dimen name="pagto_financeiro">80dp</dimen>
+
+</resources>

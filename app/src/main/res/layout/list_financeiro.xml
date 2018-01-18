@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item"
+        >
+
+            <TextView
+                android:id="@+id/item_numero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Nº"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="@dimen/text"
+                android:layout_weight="0.09"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_descricao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Descrição"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_weight="0.23"/>
+
+            <TextView
+                android:id="@+id/item_valor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Valor"
+                android:gravity="center"
+                android:textSize="@dimen/text"
+                android:layout_weight="0.20"
+                />
+
+            <TextView
+                android:id="@+id/item_vencimento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Venc."
+                android:gravity="center"
+                android:textSize="@dimen/text"
+                android:layout_weight="0.24"
+                />
+
+            <TextView
+                android:id="@+id/item_pagto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Pagto"
+                android:gravity="center"
+                android:textSize="@dimen/text"
+                android:layout_weight="0.24"
+                />
+    </LinearLayout>
+
